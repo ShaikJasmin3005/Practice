@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the First Number:");
+        int a = s.nextInt();
+        System.out.print("Enter the Second Number:");
+        int b = s.nextInt();
+        System.out.println("The Addition of " + a + " and " + b + " is: " + (a + b));
+        System.out.println("The Subtraction of " + a + " and " + b + " is: " + (a - b));
+        System.out.println("The Multiplication of " + a + " and " + b + " is: " + (a * b));
+        System.out.println("The Division of " + a + " and " + b + " is: " + (a / b));    
+        System.out.println("The Remainder of " + a + " and " + b + " is: " + (a % b));
+    }
+}
