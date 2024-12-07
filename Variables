@@ -1,0 +1,26 @@
+public class Main 
+{
+    // Global variable, primitive type
+    float f1 = 35.5f; // f1 is a primitive and global variable
+
+    // Global variable, non-primitive type
+    String variable92 = "Jsp"; // variable92 is non-primitive (String) and global variable
+
+    public static void main(String[] args) 
+    {
+        // Local variable, primitive type
+        int a = 50; // a is primitive and local variable
+
+        // Local variable, non-primitive type
+        String $1 = "N"; // $1 is non-primitive (String) and local variable
+
+        // Creating an object to access non-static variables
+        Main obj = new Main();
+
+        // Printing the values of variables
+        System.out.println(obj.f1);      // Accessing global primitive variable
+        System.out.println(a);           // Accessing local primitive variable
+        System.out.println($1);          // Accessing local non-primitive variable
+        System.out.println(obj.variable92);  // Accessing global non-primitive variable
+    }
+}
