@@ -1,0 +1,17 @@
+class Main {
+    public static void main(String[] args) {
+        long aadhar_no = 8373941855401L;  // Added 'L' at the end for long data type
+        String name = "Kayala Naveen Kumar";  // Fixed the assignment of 'name'
+        String DOB = "10/06/2001";  // Fixed the assignment of 'DOB'
+        String gender = "Male";  // Fixed the assignment of 'gender'
+        String address = "s/o k Naga Bhaskar, 1/64, Thummalus, Pen-dlimarri, Cuddapah, AP-516218.";  // Fixed the assignment of 'address'
+        long mobileNo = 80966337841L;  // Corrected variable type and name for Mobile No.
+
+        System.out.println("Aadhar No: " + aadhar_no);
+        System.out.println("Name: " + name);
+        System.out.println("DOB: " + DOB);  // Fixed the print statement syntax
+        System.out.println("Gender: " + gender);  // Fixed the print statement syntax
+        System.out.println("Address: " + address);  // Fixed the print statement syntax
+        System.out.println("Mobile No: " + mobileNo);  // Fixed the print statement syntax
+    }
+}
