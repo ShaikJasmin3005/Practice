@@ -12,6 +12,6 @@ class Main
         double p8 = 85.12;
         double ag = (p1 + p2 + p3 + 
         p4 + p5 + p6 + p7 + p8) / 8;
-        System.out.println("The total  percentage of all 8 semesters is " + ag);
+        System.out.println("The total  percentage is " + ag);
     }
 }
