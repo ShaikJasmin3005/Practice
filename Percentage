@@ -1,0 +1,17 @@
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        double p1 = 91.2;
+        double p2 = 76.3;
+        double p3 = 82.22;
+        double p4 = 65.06;
+        double p5 = 84.96;
+        double p6 = 87.58;
+        double p7 = 51.37;
+        double p8 = 85.12;
+        double ag = (p1 + p2 + p3 + 
+        p4 + p5 + p6 + p7 + p8) / 8;
+        System.out.println("The total  percentage of all 8 semesters is " + ag);
+    }
+}
