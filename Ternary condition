@@ -1,0 +1,14 @@
+class Main
+{
+    public static void main(String[] args) 
+    {
+
+        int num = 15;
+
+        int res = num % 2;
+
+        String A = (res == 0) ? num + " is an even number" : num + " is an odd number";
+
+        System.out.println(A);
+    }
+}
