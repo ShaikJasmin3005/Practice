@@ -1,0 +1,11 @@
+class Main {
+    public static void main(String[] args) {
+        int age = 22;
+
+        if (age >= 18) { // Corrected the '> =' to '>='
+            System.out.println("Eligible for Driving License"); // Corrected 'S.o.pln' to 'System.out.println'
+        } else {
+            System.out.println("Not eligible"); // Corrected '5.o.pln' to 'System.out.println'
+        }
+    }
+}
