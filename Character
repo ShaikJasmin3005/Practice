@@ -1,0 +1,15 @@
+class Main 
+{
+    public static void main(String[] args) 
+    { 
+       char ch = 'n';
+        if (ch >= 'a' && ch <= 'z') 
+       {
+            System.out.println(ch + " is a lowercase alphabet");
+        } else 
+        {
+            System.out.println(ch + " is not a lowercase alphabet");
+        }
+
+    }
+}
