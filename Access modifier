@@ -1,0 +1,18 @@
+class Access 
+{
+    private int a;  // Accessible only within the Access class
+    int b;          // Default access (package-private)
+    public int c;   // Accessible from anywhere
+}
+class Main
+  {
+    public static void main(String[] args) 
+     {
+        Access a1 = new Access();
+        // a1.a = 10; // Not accessible due to 'private' modifier
+        a1.b = 20;   // Accessible within the same package
+        a1.c = 15;   // Accessible from anywhere (public)
+        System.out.println("Value of b: " + a1.b);
+        System.out.println("Value of c: " + a1.c);
+    }
+}
