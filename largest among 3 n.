@@ -1,0 +1,24 @@
+import java.util.*;
+public class main {    
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter A value:");
+        int A=s.nextInt();
+        System.out.println("Enter B value:");
+        int B=s.nextInt();
+        System.out.println("Enter C value:");
+        int C=s.nextInt();
+        if(A>B && A>C)
+        {
+            System.out.print(A +" is greater than "+B +" and" +C);
+        }
+        else if(B>A && B>C){
+            System.out.print(B +" is greater than "+A+" and "+C);
+        }
+        else{
+            System.out.print(C +" is greater than "+A+" and "+B);   
+        }
+        s.close();
+    }
+    
+}
