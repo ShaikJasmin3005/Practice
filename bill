@@ -1,0 +1,21 @@
+import java.util.*;
+public class main {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter pencil cost:");
+        double pe = s.nextDouble();
+        System.out.print("Enter pen cost:");
+        double p = s.nextDouble();
+        System.out.print("Enter eraser cost:");
+        double e = s.nextDouble();
+        System.out.println("******************* BILL ******************************");
+        System.out.println("The cost of pencil is:"+pe);
+        System.out.println("The cost of pen is:"+p);
+        System.out.println("The cost of eraser is:"+e);
+        double gst=(18/100.0);
+        System.out.println("The total cost including 18% GST is:"+(pe+p+e+gst));
+        s.close();
+
+    }
+    
+}
