@@ -1,0 +1,29 @@
+/*Output:Enter row's number:5
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+ */
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter row's number:");
+        int n = s.nextInt();
+        for(int i=n;i>0;i--)
+        {
+            for(int k=n-i;k>0;k--)
+            {
+                System.out.print(" ");
+            }
+            for(int j=i;j>0;j--)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
+        s.close();
+    }
+    
+}
