@@ -1,0 +1,33 @@
+/*output:
+Enter row's number:5
+Enter starting character:A
+A 
+A B
+A B C
+A B C D
+A B C D E */
+import java.util.*;
+public class main 
+{
+    public static void main(String[] args)
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter row's number:");
+        int n = s.nextInt();
+        System.out.print("Enter starting character:");
+        char a = s. next().charAt(0);
+        int b = (int) a;
+        for(int i=1;i<=n;i++)
+         {
+           for(int j=1;j<=i;j++)
+           {
+            System.out.print((char) b+" ");
+            b=b+1;
+           }
+           b=(int) a;
+           System.out.println();
+         }   
+         s.close(); 
+    }
+    
+}
