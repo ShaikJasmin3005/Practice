@@ -1,0 +1,32 @@
+/*output:Enter row's number: 5
+     1
+    1 1
+   1 2 1
+  1 3 3 1
+ 1 4 6 4 1
+ */
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter row's number: ");
+        int n = s.nextInt();
+        int [][] arr = new int[n][n];
+        for (int i = 0; i < n; i++) {
+                for (int k = n - i; k > 0; k--) {
+                    System.out.print(" ");
+                }
+                for (int j = 0; j <=i; j++) {
+                    if (j == 0 || j == (2 * i -1)) {
+                        arr[i][j]=1;
+                    } else {
+                        arr[i][j]=arr[i-1][j-1]+arr[i-1][j];
+                    }
+                    System.out.print(arr[i][j]+" ");
+                }
+                System.out.println(); 
+                s.close();
+            }
+        }
+
+    }
