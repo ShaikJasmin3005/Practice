@@ -1,0 +1,25 @@
+/*output:Enter length of the array:6
+Enter array:12 35 10 1 34 1
+The Second largest element:34*/
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter length of the array:");
+        int n = s.nextInt();
+        System.out.print("Enter array:");
+        int arr[] =new int[n];
+        for(int i =0;i<n;i++)
+        {
+           arr[i]=s.nextInt();
+        }
+        Arrays.sort(arr);
+        for(int j =n-1;j>0;j--){
+            if(arr[j-1]!=arr[j]){
+                System.out.print("The Second largest element:"+arr[j-1]);
+                break;
+            }
+        }
+        s.close();
+    }
+ }
