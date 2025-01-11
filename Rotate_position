@@ -1,0 +1,38 @@
+/*output:Enter length of the array:5
+Enter array:1 2 3 4 5
+Enter position to rotate:2
+3 4 5 1 2 */
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter length of the array:");
+        int n = s.nextInt();
+        System.out.print("Enter array:");
+        int arr[] =new int[n];
+        for(int i =0;i<n;i++)
+        {
+           arr[i]=s.nextInt();
+        }
+        System.out.print("Enter position to rotate:");
+        int d = s. nextInt();
+        int j = d;
+        if(d>0){
+            for(int i =0;i<=arr.length-1;i++){
+                int t = arr[i];
+                arr[i]=arr[j];
+                arr[j]=t;
+                if(i!=j && j<arr.length-1){
+                    j++;
+                }
+                if(i==j){
+                    break;
+                }
+            }
+        for(int i =0;i<n;i++)
+        {
+           System.out.print(arr[i]+" ");
+        }
+        }   
+   }
+}
