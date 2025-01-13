@@ -1,0 +1,28 @@
+/*output:
+ * Enter a number:10001
+10001 is a palindrome number
+ */
+import java.util.*;
+public class main{
+public static void main(String args[])
+{
+   Scanner s = new Scanner(System.in);
+   System.out.print("Enter a number:");
+   int n = s.nextInt();
+   int t =n;
+   int su =0;
+   while(n>0){
+    int r=n%10;
+    su=r+(su*10);
+    n=n/10;
+   }
+   if(su==t){
+    System.out.println(t+" is a palindrome number");
+   }
+   else{
+    System.out.println(t+" is not a palindrome number");
+ 
+   }
+   s.close();
+}
+}
