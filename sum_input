@@ -1,0 +1,26 @@
+/*output:
+ * Enter an input:5
+Enter an input:2
+Enter an input:0
+The Sum of the input number is:7
+ */
+import java.util.*;
+public class main {
+    public static void main(String args[]){
+     Scanner s = new Scanner(System.in);
+     int sum =0;
+     while(true){
+        System.out.print("Enter an input:");
+        int n = s.nextInt();
+        if(n==0){
+        break;
+       }
+       else{
+        sum=sum+n;
+       }
+     }
+     System.out.println("The Sum of the input number is:"+sum);
+     s.close();
+    }
+    
+}
