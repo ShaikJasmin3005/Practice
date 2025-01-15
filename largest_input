@@ -1,0 +1,30 @@
+/*output:
+Enter an input:30
+Enter an input:5
+Enter an input:26
+Enter an input:20
+Enter an input:0
+The Largest number for the input number is:30
+ */
+import java.util.*;
+public class main {
+    public static void main(String args[]){
+     Scanner s = new Scanner(System.in);
+     int sum =0;
+     while(true){
+        System.out.print("Enter an input:");
+        int n = s.nextInt();
+        if(n==0){
+        break;
+       }
+       else{
+        if(n>sum){
+            sum=n;
+        }
+       }
+     }
+     System.out.println("The Largest number for the input number is:"+sum);
+     s.close();
+    }
+    
+}
