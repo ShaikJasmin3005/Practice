@@ -1,0 +1,31 @@
+/*output:
+Enter n value:5
+Enter an input:1
+Enter an input:2
+Enter an input:3
+Enter an input:4
+Enter an input:5
+The Average of input numbers:3
+ */
+import java.util.*;
+public class main {
+    public static void main(String args[]){
+     Scanner s = new Scanner(System.in);
+     int sum =0;
+     System.out.print("Enter n value:");
+     int n = s.nextInt();
+     int t = n;
+     while(n>0){
+        System.out.print("Enter an input:");
+        int nu = s.nextInt();
+        sum=sum+nu;
+        n--;
+     }
+     System.out.println("The Average of input numbers:"+sum/t);
+     s.close();
+    }
+    
+}
+
+
+
