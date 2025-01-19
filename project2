@@ -1,0 +1,47 @@
+/*output:
+ * Enter Customer Name: Jasmin
+Enter Customer ID: JA2345
+Enter the number of units consumed: 100
+
+--- Electricity Bill ---
+Customer Name: Jasmin
+Customer ID: JA2345
+Units Consumed: 100.0
+Total Bill Amount: RS.200.0
+ */
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Customer Name: ");
+        String customerName = scanner.nextLine();
+        System.out.print("Enter Customer ID: ");
+        String customerID = scanner.nextLine();
+        System.out.print("Enter the number of units consumed: ");
+        double units = scanner.nextDouble();
+        double billAmount = calculateBill(units);
+        System.out.print("\n--- Electricity Bill ---");
+        System.out.print("\nCustomer Name: " + customerName);
+        System.out.print("\nCustomer ID: " + customerID);
+        System.out.print("\nUnits Consumed: " + units);
+        System.out.print("\nTotal Bill Amount: RS." + billAmount);
+    }
+    public static double calculateBill(double units) {
+        double amount = 0;
+
+        if (units <= 100) {
+            amount = units * 1.5; 
+        } else if (units <= 300) {
+            amount = (100 * 1.5) + ((units - 100) * 3.0); 
+        } else if (units <= 500) {
+            amount = (100 * 1.5) + (200 * 3.0) + ((units - 300) * 4.5);
+        } else {
+            amount = (100 * 1.5) + (200 * 3.0) + (200 * 4.5) + ((units - 500) * 6.0); 
+
+        }
+        double fixedCharges = 50;
+        amount += fixedCharges;
+        return amount;
+    }
+}
+
