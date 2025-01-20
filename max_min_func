@@ -1,0 +1,45 @@
+/*output:
+Enter first number:3
+Enter Second number:6
+Enter third number:2
+The Maximum value among three value is:6
+The Minimum value among three valiue is2
+ */
+import java.util.*;
+public class main {
+    public static int  max(int a,int b,int c){
+         if(a>b && a>c){
+            return a;
+         }
+         else if(b>c && b>a){
+            return b;
+         }
+         else{
+            return c;
+         }
+
+    }   
+    public static int min(int a , int b,int c){
+        if(a<b && a<c){
+            return a;
+         }
+         else if(b<c && b<a){
+            return b;
+         }
+         else{
+            return c;
+         }
+    }
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter first number:");
+        int a = s.nextInt();
+        System.out.print("Enter Second number:");
+        int b = s.nextInt();
+        System.out.print("Enter third number:");
+        int c = s.nextInt();
+        System.out.println("The Maximum value among three value is:"+max(a,b,c));
+        System.out.println("The Minimum value among three valiue is"+min(a,b,c));
+        s.close();
+    }
+}
