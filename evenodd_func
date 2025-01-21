@@ -1,0 +1,26 @@
+/*output:
+Enter a number:4581     
+4581 is a odd number
+
+Enter a number:678913256
+678913256 is an even number
+ */
+import java.util.*;
+public class fun2 {
+    public static void  main(int a){
+        if(a%2==0){
+            System.out.print(a+" is an even number");
+        }
+        else{
+            System.out.println(a+" is a odd number");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n = s.nextInt();
+        evenodd(n);
+        s.close();
+    }
+    
+}
