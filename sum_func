@@ -1,0 +1,27 @@
+/*output:
+Enter two numbers:78 23
+Sum of the given two numbers:101
+
+Enter two numbers:12 -5
+Sum of the given two numbers:7
+
+Enter two numbers:-12 4
+Sum of the given two numbers:-8
+
+Enter two numbers:-3 -4
+Sum of the given two numbers:-7
+*/
+import java.util.*;
+public class main {
+    public static void sum(int a,int b){
+        System.out.print("Sum of the given two numbers:"+(a+b));
+    }
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter two numbers:");
+        int a=s.nextInt();
+        int b=s.nextInt();
+        sum(a, b);
+        s.close();
+    }
+}
