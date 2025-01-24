@@ -1,0 +1,25 @@
+/*output:
+Enter two numbers:2 3
+The product of two given numbers:6 
+
+Enter two numbers:-5 3
+The product of two given numbers:-15
+
+Enter two numbers:-4 -7
+The product of two given numbers:28
+*/
+import java.util.*;
+public class main {
+    public static int product(int a,int b){
+        return (a*b);
+    }
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter two numbers:");
+        int a=s.nextInt();
+        int b=s.nextInt();
+        int p=product(a, b);
+        System.out.println("The product of two given numbers:"+p);
+        s.close();
+    }
+}
