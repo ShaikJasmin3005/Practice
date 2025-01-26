@@ -1,0 +1,23 @@
+/*output:
+Enter a number:12
+12! = 12*11*10*9*8*7*6*5*4*3*2*1 = 479001600 */
+import java.util.*;
+public class main {
+    public static void factorial(int n) {
+       int f=1;
+       String fact ="" ;      
+        for(int i =n;i>0;i--){
+            f=f*i;
+            fact=fact+i;
+            if(i>1){fact=fact+"*";}
+        }
+            System.out.print(n+"! = "+fact+" = "+f);
+    }
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n = s.nextInt();
+        factorial(n);
+        s.close();
+    }
+}
