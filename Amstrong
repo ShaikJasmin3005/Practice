@@ -1,0 +1,28 @@
+/*output:
+Enter a number:153
+153 is an armstrong number.
+
+Enter a number:543
+543 is not an armstrong number.
+*/
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
+    System.out.print("Enter a number:");
+    int n =  s.nextInt();
+    int t = n;
+    int re=0;
+    int su=0;
+    while(n>0){
+        re=n%10;
+        su=su+re*re*re;
+        n=n/10;
+    } 
+    if(su==t){
+        System.out.println(t+" is an armstrong number.");
+    }
+    else{System.out.println(t+" is not an armstrong number.");} 
+    s.close(); 
+    }
+}
