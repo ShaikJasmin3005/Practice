@@ -1,0 +1,22 @@
+/*output:Enter the n value:25
+The sum of first n natural numbers is:325
+ */
+import java.util.*;
+public class natural {
+    public static void Sum_naturalno(int n) {
+        int su=0;
+        for(int i=1;i<=n;i++){
+            su=su+i;
+        }
+        System.out.println("The sum of first n natural numbers is:"
+        +su);
+
+    }
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the n value:");
+        int n = s.nextInt();
+        Sum_naturalno(n);
+        s.close();
+        }
+}
