@@ -1,0 +1,33 @@
+/*output:
+Enter a value:2
+Enter a value:3
+Enter a value:4
+2 3 4 are not  pythagorean triplet 
+
+Enter a value:3
+Enter a value:3
+Enter a value:18
+3 3 18 are pythagorean triplet
+*/
+import java.util.*;
+public class main {
+    public static void triplet(int a,int b,int c){
+        if(c ==((a*a)+(b*b))){
+            System.out.print(a+" "+b+" "+c+" are pythagorean triplet");
+        }
+        else{
+            System.out.print(a+" "+b+" "+c+" are not  pythagorean triplet");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter a value:");
+        int a = s.nextInt();
+        System.out.print("Enter a value:");
+        int b = s.nextInt();
+        System.out.print("Enter a value:");
+        int c = s.nextInt();
+        triplet(a, b, c);
+        s.close();
+    }
+}
