@@ -1,0 +1,27 @@
+/*output: 
+Enter a number:3
+3 is not a perfect number
+
+Enter a number:6
+6 is a perfect number
+*/
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n = s.nextInt();
+        int t=n;
+        int su=0;
+        for (int i=1;i<n;i++){
+            if(n%i==0){
+                su=su+i;
+            }
+        }
+        if(su==t){
+            System.out.println(t+" is a perfect number");
+        }
+        else{System.out.println(t+" is not a perfect number");}
+        s.close();
+    }
+}
