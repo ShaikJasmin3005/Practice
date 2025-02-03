@@ -1,0 +1,18 @@
+import java.util.*;
+public class swappingm1 {
+    public static void withTemp(int a,int b)
+    {
+        int t = a;
+        a=b;
+        b=t;
+        System.out.println("After Swapping two values:"+a+" "+b);
+    }
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter two values:");
+        int a = s.nextInt();
+        int b = s.nextInt();
+        System.out.println("Before Swapping two values:"+a+" "+b);
+        withTemp(a, b);
+        s.close();
+    }
