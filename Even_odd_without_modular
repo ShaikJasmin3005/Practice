@@ -1,0 +1,18 @@
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n = s.nextInt();
+        String num = Integer.toString(n);
+        int l=num.length();
+        char a=num.charAt(l-1);
+        if(a=='0' || a=='2'|| a=='4' || a=='6' || a=='8'){
+            System.out.print(num+" is an even number");
+        }
+        else{
+            System.out.print(num+" is a odd number");
+        }
+        s.close();
+    }
+}
