@@ -1,0 +1,21 @@
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter  lower and upper range value:");
+        int l = s.nextInt();
+        int u=s.nextInt();
+        for(int i =l;i<=u;i++){
+            int c=1;
+            for(int j =1;j<=i/2;j++){
+                if(i%j==0){
+                    c=c+1;
+                }
+            }
+        if(c==2){
+            System.out.print(i+" ");
+        }    
+    }
+        s.close();
+    }
+}
