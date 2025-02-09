@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius of circle: ");
+        double radius = sc.nextDouble();
+        System.out.println("Area of Circle: " + (Math.PI * radius * radius));
+        System.out.println("Perimeter of Circle: " + (2 * Math.PI * radius));
+        System.out.print("Enter base and height of triangle: ");
+        double base = sc.nextDouble(), height = sc.nextDouble();
+        System.out.println("Area of Triangle: " + (0.5 * base * height));        
+        System.out.print("Enter length and width of rectangle: ");
+        double length = sc.nextDouble(), width = sc.nextDouble();
+        System.out.println("Area of Rectangle: " + (length * width));
+        System.out.println("Perimeter of Rectangle: " + (2 * (length + width)));       
+        System.out.print("Enter base and height of parallelogram: ");
+        double parBase = sc.nextDouble(), parHeight = sc.nextDouble();
+        System.out.println("Area of Parallelogram: " + (parBase * parHeight));        
+        System.out.print("Enter side and height of rhombus: ");
+        double rhombusSide = sc.nextDouble(), rhombusHeight = sc.nextDouble();
+        System.out.println("Area of Rhombus: " + (rhombusSide * rhombusHeight));
+        System.out.println("Perimeter of Rhombus: " + (4 * rhombusSide));        
+        System.out.print("Enter side of equilateral triangle: ");
+        double side = sc.nextDouble();
+        System.out.println("Area of Equilateral Triangle: " + ((Math.sqrt(3) / 4) * side * side));
+        System.out.println("Perimeter of Equilateral Triangle: " + (3 * side));        
+        System.out.print("Enter base and side of parallelogram: ");
+        double parSide = sc.nextDouble();
+        System.out.println("Perimeter of Parallelogram: " + (2 * (parBase + parSide)));        
+        System.out.print("Enter side of square: ");
+        double squareSide = sc.nextDouble();
+        System.out.println("Perimeter of Square: " + (4 * squareSide));        
+        System.out.print("Enter radius and height of cone: ");
+        double coneRadius = sc.nextDouble(), coneHeight = sc.nextDouble();
+        System.out.println("Volume of Cone: " + ((1.0/3) * Math.PI * coneRadius * coneRadius * coneHeight));        
+        System.out.print("Enter base area and height of prism: ");
+        double prismBaseArea = sc.nextDouble(), prismHeight = sc.nextDouble();
+        System.out.println("Volume of Prism: " + (prismBaseArea * prismHeight));        
+        System.out.print("Enter radius and height of cylinder: ");
+        double cylRadius = sc.nextDouble(), cylHeight = sc.nextDouble();
+        System.out.println("Volume of Cylinder: " + (Math.PI * cylRadius * cylRadius * cylHeight));
+        System.out.println("Curved Surface Area of Cylinder: " + (2 * Math.PI * cylRadius * cylHeight));       
+        System.out.print("Enter radius of sphere: ");
+        double sphereRadius = sc.nextDouble();
+        System.out.println("Volume of Sphere: " + ((4.0/3) * Math.PI * Math.pow(sphereRadius, 3)));        
+        System.out.print("Enter base area and height of pyramid: ");
+        double pyramidBaseArea = sc.nextDouble(), pyramidHeight = sc.nextDouble();
+        System.out.println("Volume of Pyramid: " + ((1.0/3) * pyramidBaseArea * pyramidHeight));        
+        System.out.print("Enter side of cube: ");
+        double cubeSide = sc.nextDouble();
+        System.out.println("Total Surface Area of Cube: " + (6 * cubeSide * cubeSide));       
+        sc.close();
+    }
+}
+
