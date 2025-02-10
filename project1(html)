@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jasmin Shaik - Resume</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: auto; 
+            padding: 20px;
+            border: 3px solid #000;
+            max-width: 800px;
+            
+        }
+        
+        .contact {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        hr {
+            border: 1px solid black;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body >
+
+    
+    <div class="contact">
+        <h1>Jasmin Shaik</h1>ph: 7675040728 &#8226; Gmail: <a href="mailto:jasminshaik650@gmail.com">jasminshaik650@gmail.com</a> &#8226; <a href="#">LinkedIn</a> • <a href="#">GitHub</a>
+    </div>
+
+    <div class="section">
+        <h2>Personal Summary</h2>
+        <p>Motivated and detail-oriented Computer Science undergraduate with a strong foundation in 
+            programming, problem-solving, and software development. Passionate about building efficient 
+            and scalable applications while continuously learning new technologies. Seeking opportunities 
+            to apply my skills in real-world projects and contribute to innovative solutions.
+
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>St. Ann’s College of Engineering and Technology</strong> – Chirala, Andhra Pradesh, India</p>
+        <p><i>Bachelor of Technology in Computer Science and Engineering</i> (Aug 2022 – Present)</p>
+        <p><strong>Current CGPA:</strong> 8.85</p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <p><strong>Programming:</strong> Java, Python, C++</p>
+        <p><strong>Tools:</strong> Git, HTML, CSS, JavaScript</p>
+        <p><strong>Other Skills:</strong> Problem-solving, Debugging, Team Collaboration</p>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <p><strong>Candidate Database Management System (Sep 2024)</strong></p>
+        <p><a href="https://github.com/ShaikJasmin3005/Practice/blob/main/connect%20to%20database%20using%20java">GitHub Link</a></p>
+        <ul>
+            <li>Designed and implemented a MySQL database schema for managing candidate information.</li>
+            <li>Developed and optimized SQL queries for efficient data handling.</li>
+            <li>Integrated Java with MySQL using JDBC and validated user input for data integrity.</li>
+            <li>Tested application reliability with JUnit and collaborated via Git for version control.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Achievements & Certifications</h2>
+        <ul>
+            <li>2024 JAVA Full Stack - BrainOvision</li>
+            <li>2024 JAVA - Spoken Tutorial</li>
+            <li>2024 JavaScript - edX</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Additional Information</h2>
+        <p><strong>Languages:</strong> English (Fluent), Telugu (Intermediate), Hindi (Native)</p>
+        <p><strong>Interests:</strong> Coding Challenges, Android App Development</p>
+    </div>
+
+</body>
+</html>
