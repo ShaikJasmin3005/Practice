@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Factorial {
+    public static int recurFact(int n) {
+        if (n == 0) {
+            return 1;
+        } else {
+            return n * recurFact(n - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        if (num < 0) {
+            System.out.println("Factorial does not exist for negative numbers");
+        } else {
+            System.out.println("Factorial: " + recurFact(num));
+        }
+
+        scanner.close();
+    }
+}
