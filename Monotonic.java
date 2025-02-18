@@ -31,12 +31,7 @@ public class Monotonic {
                 de=false;
             }
         }
-        if(in || de){
-            System.out.println("Array is in Monotonic Nature");
-        }
-        else{
-            System.out.println("Array is not in Monotonic Nature");   
-        }
+        System.out.println(in || de ? "Array is in Monotonic Nature":"Array is not in Monotonic Nature");
         s.close();
     }
 }
