@@ -1,0 +1,40 @@
+/*output:
+Enter your monthly salary: 20000000
+Enter your credit score (300-850): 800
+Enter your existing debt amount: 400000
+Congratulations! You are eligible for the loan. 
+*/
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your monthly salary: ");
+        double salary = scanner.nextDouble();
+        System.out.print("Enter your credit score (300-850): ");
+        int creditScore = scanner.nextInt();
+        System.out.print("Enter your existing debt amount: ");
+        double debt = scanner.nextDouble();
+        boolean isEligible;
+        if (salary >= 50000) {
+            if (creditScore >= 700) {
+                isEligible = debt < (salary * 0.4);  
+            } else {
+                isEligible = false;  
+            }
+        } else if (salary >= 30000 && salary < 50000) {
+            if (creditScore >= 750 && debt < (salary * 0.3)) {  
+                isEligible = true;  
+            } else {
+                isEligible = false;
+            }
+        } else {
+            isEligible = false;  
+        }
+        if (isEligible) {
+            System.out.println("Congratulations! You are eligible for the loan.");
+        } else {
+            System.out.println("Sorry, you are not eligible for the loan.");
+        }
+        scanner.close();
+    }
+}
