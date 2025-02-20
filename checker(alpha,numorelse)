@@ -1,0 +1,26 @@
+/*output:
+Enter a character: a
+a is an alphabet
+
+Enter a character: 4
+4 is a digit
+
+Enter a character: -
+- is neither alphabet nor digit
+ */
+import java.util.Scanner;
+public class Checker {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        char ch = s.next().charAt(0);
+        if (Character.isDigit(ch)) {
+            System.out.println(ch+" is a digit");
+        } else if (Character.isLetter(ch)) {
+            System.out.println(ch+" is an alphabet");
+        } else {
+            System.out.println(ch+" is neither alphabet nor digit");
+        }
+        s.close();
+    }
+}
