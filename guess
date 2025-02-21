@@ -1,0 +1,47 @@
+/*output:
+Enter no of attempts:1
+Enter the range:10
+Welcome to the Number Guessing Game!
+I have selected a number between 1 and 10.
+You have 1 attempts to guess it.
+Enter your guess: 5
+Too high! Try again.
+Sorry! You've used all attempts. The correct number was: 1
+*/
+import java.util.Scanner;
+import java.util.Random;
+public class Guessing{
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        Random random = new Random();
+        System.out.print("Enter no of attempts:");
+        int n = s.nextInt();
+        System.out.print("Enter the range:");
+        int r = s.nextInt();
+        int randomNumber = random.nextInt(r) + 1;
+        int attempts = n;
+        int guess;
+        System.out.println("Welcome to the Number Guessing Game!");
+        System.out.println("I have selected a number between 1 and 10.");
+        System.out.println("You have " + attempts + " attempts to guess it.");
+        while (attempts > 0) {
+            System.out.print("Enter your guess: ");
+            guess = s.nextInt();
+            if (guess == randomNumber) {
+                System.out.println("Congratulations! You guessed the correct number: " + randomNumber);
+                break;
+            } else if (guess < randomNumber) {
+                System.out.println("Too low! Try again.");
+            } else {
+                System.out.println("Too high! Try again.");
+            }
+            attempts--; // Reduce attempts
+            if (attempts > 0) {
+                System.out.println("Attempts left: " + attempts);
+            } else {
+                System.out.println("Sorry! You've used all attempts. The correct number was: " + randomNumber);
+            }
+        }
+        s.close();
+    }
+}
