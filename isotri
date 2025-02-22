@@ -1,0 +1,19 @@
+/*output:
+Enter the length of the equal sides (a): 5
+Enter the base of the triangle (b): 1
+The area of the isosceles triangle is: 2.48746859276655
+*/
+import java.util.Scanner;
+public class IsoscelesTriangleArea {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the length of the equal sides (a): ");
+        double a = scanner.nextDouble();
+        System.out.print("Enter the base of the triangle (b): ");
+        double b = scanner.nextDouble();
+        double height = Math.sqrt((a * a) - ((b / 2) * (b / 2)));
+        double area = 0.5*(b * height);
+        System.out.println("The area of the isosceles triangle is: " + area);
+        scanner.close();
+    }
+}
