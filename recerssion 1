@@ -1,0 +1,14 @@
+/*output:3in 2in 1in 1out 2out 3out */
+public class main {
+    public static void main(String[] args) {
+        printFun(3);
+    }
+    static void printFun(int n){
+        if(n<1){return;}
+        else{
+            System.out.print(" "+n+"in");
+            printFun(n-1);
+            System.out.print(" "+n+"out");
+        }
+    }
+}
