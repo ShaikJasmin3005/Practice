@@ -1,0 +1,23 @@
+/* output:
+Enter starting number:1
+Enter endinging number:10
+1 2 3 4 5 6 7 8 9 10  
+*/
+import java.util.*;
+public class re1 {
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter starting number:");
+        int sa = s.nextInt();
+        System.out.print("Enter endinging number:");
+        int e = s.nextInt();
+        printn(sa,e);
+        s.close();
+    }
+    public static void printn(int start, int end){
+        if(start<=end){
+            System.out.print(start+" ");
+            printn(start+1, end);
+        }
+    }
+}
