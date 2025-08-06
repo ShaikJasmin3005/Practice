@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidate Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: aqua;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        pre {
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 500px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Candidate Management System</h1>
+
+    <input type="text" id="name" placeholder="Name" />
+    <input type="email" id="email" placeholder="Email" /><br/>
+
+    <input type="number" id="id" placeholder="Candidate ID" /><br/>
+
+    <button onclick="perform('create')">Create</button>
+    <button onclick="perform('read')">Read</button>
+    <button onclick="perform('update')">Update</button>
+    <button onclick="perform('delete')">Delete</button>
+
+    <pre id="output"></pre>
+
+    <script>
+    async function perform(action) {
+        const id = document.getElementById('id').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+
+        let data = {};
+        if (action === 'create') {
+            data = { name, email };
+        } else if (action === 'update') {
+            data = { id, name, email };
+        } else if (action === 'delete') {
+            data = { id };
+        }
+
+        try {
+            const response = await fetch(`http://localhost:8080/${action}`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.text();
+            document.getElementById('output').innerText = result;
+
+            if (action === 'create' || action === 'update') {
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('id').value = '';
+            }
+        } catch (error) {
+            alert("Error: " + error.message);
+        }
+    }
+    </script>
+</body>
+</html>
